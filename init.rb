@@ -20,5 +20,5 @@ Redmine::Plugin.register :redmine_group_manager do
     permission :change_owner, :gmanagers => [:update_admin]
 
   end
-  menu :project_menu, :groups, {:controller => 'gmanagers', :action => 'index'}, :caption=> "Groups",:last=>true, :param => :project_id
+  menu :project_menu, :groups, {:controller => 'gmanagers', :action => 'index'}, :caption=> :groups_manager, :last=>true, :param => :project_id
 end
